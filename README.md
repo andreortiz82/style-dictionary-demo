@@ -4,9 +4,7 @@ Demo for Style Dictionary. The tokens are generated using [Style Dictionary](htt
 
 ## How it works
 
-![Foundation Variables](assets/foundation.png)
-![Semantic Variables](assets/semantic.png)
-![Size Variables](assets/size.png)
+![Foundation Variables](assets/cover.png)
 
 1. Variable Collections are created in Figma
 2. Variables are exported to JSON via [this figma plugin](https://www.figma.com/community/plugin/1256972111705530093)
