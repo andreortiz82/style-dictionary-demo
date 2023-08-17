@@ -3,7 +3,7 @@
   "platforms": {
     "web": {
       "transformGroup": "custom/group",
-      "buildPath": "./src/tokens/generated/",
+      "buildPath": "./tokens/",
       "files": [
         {
           "destination": "ost-tokens.css",

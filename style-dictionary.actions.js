@@ -69,47 +69,6 @@ StyleDictionary.registerParser({
  * StyleDictionary: Transforms
  * ----------------------------------------
  */
-StyleDictionary.registerTransform({
-  name: "name-transform",
-  type: "name",
-  transformer: (token) => {
-    let newName = token.name.replace("mode-1-", "");
-    newName = newName.replace("typography-", "");
-    newName = newName.replace("effects-", "");
-    return newName;
-  },
-});
-
-StyleDictionary.registerTransform({
-  name: "px-value-transform",
-  type: "value",
-  matcher: (token) => {
-    return (
-      token.collection.includes("size") ||
-      token.collection.includes("breakpoint") ||
-      token.collection.includes("border") ||
-      token.collection.includes("space")
-    );
-  },
-  transformer: (token) => {
-    return `${token.value}px`;
-  },
-});
-
-StyleDictionary.registerTransform({
-  name: "rem-value-transform",
-  type: "value",
-  matcher: (token) => {
-    return token.collection.includes("typography");
-  },
-  transformer: (token) => {
-    if (token.name.includes("font-size-")) {
-      return `${token.value}rem`;
-    } else {
-      return token.value;
-    }
-  },
-});
 
 StyleDictionary.registerTransform({
   name: "name-transform",
