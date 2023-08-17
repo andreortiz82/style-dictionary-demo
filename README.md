@@ -4,6 +4,6 @@ Demo for Style Dictionary. The tokens are generated using [Style Dictionary](htt
 
 ## Get started
 
-1. `git clone https://github.com/reifyhealth/picasso-design-tokens.git`
-2. `cd sd-demo/`
-3. `yarn build`
+1. `git clone git@github.com:andreortiz82/style-dictionary-demo.git`
+2. `cd style-dictionary-demo/`
+3. `npm run build`
