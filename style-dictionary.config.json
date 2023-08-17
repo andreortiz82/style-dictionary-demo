@@ -1,0 +1,15 @@
+{
+  "source": ["./Exported_Figma_Tokens/**/*.json"],
+  "platforms": {
+    "web": {
+      "transformGroup": "custom/group",
+      "buildPath": "./src/tokens/generated/",
+      "files": [
+        {
+          "destination": "ost-tokens.css",
+          "format": "custom/css"
+        }
+      ]
+    }
+  }
+}
