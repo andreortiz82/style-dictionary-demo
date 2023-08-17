@@ -134,5 +134,43 @@ StyleDictionary.registerFormat({
   },
 });
 
+StyleDictionary.registerFormat({
+  name: "custom/css/mode-support",
+  formatter: function ({ dictionary }) {
+    const lightColors = `@media (prefers-color-scheme: light) {\n :root { 
+      ${dictionary.allTokens
+        .map((token) => {
+          if (token.mode === "light-mode") {
+            return `--${token.name
+              .replace("foundation-", "")
+              .replace("light-mode-", "")}:${token.value};`;
+          }
+        })
+        .join("\n")}
+    }}`;
+
+    const darkColors = `@media (prefers-color-scheme: dark) {\n :root { 
+      ${dictionary.allTokens
+        .map((token) => {
+          if (token.mode === "dark-mode") {
+            return `--${token.name
+              .replace("foundation-", "")
+              .replace("dark-mode-", "")}:${token.value};`;
+          }
+        })
+        .join("\n")}
+    }}`;
+
+    return `${lightColors}${darkColors}`;
+  },
+});
+
+StyleDictionary.registerFilter({
+  name: "custom/not-foundation",
+  matcher: function (token) {
+    return !token.collection.includes("foundation");
+  },
+});
+
 const StyleDictionaryExtended = StyleDictionary.extend(baseConfig);
 StyleDictionaryExtended.buildAllPlatforms();

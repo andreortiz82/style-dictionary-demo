@@ -6,8 +6,13 @@
       "buildPath": "./tokens/",
       "files": [
         {
-          "destination": "ost-tokens.css",
-          "format": "custom/css"
+          "destination": "ost-foundation.css",
+          "format": "custom/css/mode-support"
+        },
+        {
+          "destination": "ost-semantic.css",
+          "format": "custom/css",
+          "filter": "custom/not-foundation"
         }
       ]
     }
