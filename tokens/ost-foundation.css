@@ -1,16 +1,39 @@
 @media (prefers-color-scheme: light) {
-  :root {
-    --base: #ffffff;
-    --red: #f33737;
-    --blue: #60bafb;
-    --yellow: #fae41f;
-  }
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --base: #000000;
-    --red: #ffa5a5;
-    --blue: #9bd5ff;
-    --yellow: #fef17f;
-  }
-}
+ :root { 
+      --base:#FFFFFF;
+--red:#F33737;
+--blue:#60BAFB;
+--yellow:#FAE41F;
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }}@media (prefers-color-scheme: dark) {
+ :root { 
+      
+
+
+
+--base:#000000;
+--red:#FFA5A5;
+--blue:#9BD5FF;
+--yellow:#FEF17F;
+
+
+
+
+
+
+
+
+
+    }}

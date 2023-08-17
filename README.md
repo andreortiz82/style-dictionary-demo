@@ -23,4 +23,5 @@ The path from Figma to token code is outlined below
 
 1. `git clone git@github.com:andreortiz82/style-dictionary-demo.git`
 2. `cd style-dictionary-demo/`
+4. `npm install`
 3. `npm run build`

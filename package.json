@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node ./style-dictionary.actions.js"
   },
-  "author": "",
+  "author": "Andre Ortiz",
   "license": "ISC",
   "dependencies": {
     "lodash": "^4.17.21",

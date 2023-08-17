@@ -52,6 +52,9 @@ function toStyleDictionaryFormat(inputJson, filePath) {
         value: variable.resolvedValuesByMode[mode].resolvedValue,
         alias: _.kebabCase(variable.resolvedValuesByMode[mode].aliasName),
       };
+
+      console.log(`raw ---->`, variable);
+      console.log(`transformed ---->`, styleDictionary);
     });
   }
 
